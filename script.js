@@ -14,6 +14,6 @@ calculateBtn.addEventListener('click', () => {
         }
         resultDiv.textContent = `You are ${age} years old.`;
     } else {
-        resultDiv.textContent = 'Please enter your birthdate.';
+        resultDiv.textContent = 'Please enter your birthdate Bhai.';
     }
 });
