@@ -83,4 +83,14 @@ calculateBtn.addEventListener('click', () => {
                 totalSeconds.toLocaleString();
         };
 
-       
+        // Show the result immediately
+        updateLifeExperience();
+
+        // Update seconds continuously
+        liveTimer = setInterval(updateLifeExperience, 1000);
+    } else {
+        resultDiv.textContent = 'Enter your birthdate Yaar 🙋🏻‍♂️';
+    }
+});
+
+
