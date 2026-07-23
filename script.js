@@ -30,5 +30,33 @@ calculateBtn.addEventListener('click', () => {
         ) {
             age--;
         }
+          // Create the result section
+        resultDiv.innerHTML = `
+            <h2>You are ${age} years old.</h2>
 
-      
+            <div class="life-experience">
+                <h3>Your Life Experience 🎉</h3>
+
+                <p>
+                    <strong id="totalDays">0</strong>
+                    days lived
+                </p>
+
+                <p>
+                    <strong id="totalHours">0</strong>
+                    hours lived
+                </p>
+
+                <p>
+                    <strong id="totalMinutes">0</strong>
+                    minutes lived
+                </p>
+
+                <p>
+                    <strong id="totalSeconds">0</strong>
+                    seconds lived
+                </p>
+            </div>
+        `;
+
+        
