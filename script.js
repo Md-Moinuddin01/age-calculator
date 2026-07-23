@@ -59,4 +59,28 @@ calculateBtn.addEventListener('click', () => {
             </div>
         `;
 
-        
+        const updateLifeExperience = () => {
+            const currentTime = new Date();
+            const timeDifference = currentTime - birthDate;
+
+            const totalSeconds = Math.floor(timeDifference / 1000);
+            const totalMinutes = Math.floor(timeDifference / (1000 * 60));
+            const totalHours = Math.floor(timeDifference / (1000 * 60 * 60));
+            const totalDays = Math.floor(
+                timeDifference / (1000 * 60 * 60 * 24)
+            );
+
+            document.getElementById('totalDays').textContent =
+                totalDays.toLocaleString();
+
+            document.getElementById('totalHours').textContent =
+                totalHours.toLocaleString();
+
+            document.getElementById('totalMinutes').textContent =
+                totalMinutes.toLocaleString();
+
+            document.getElementById('totalSeconds').textContent =
+                totalSeconds.toLocaleString();
+        };
+
+       
